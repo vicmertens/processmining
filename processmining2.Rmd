@@ -194,7 +194,7 @@ kable(as.data.frame(mapp))
 
 
 mappi<-mapp %>% plot()
-png(file="processing_time.png",width=800,height=1000)
+png(file="processing_time.png",width=1500, height=2000)
 mappi
 dev.off()
 include_graphics("processing_time.png")
@@ -265,6 +265,7 @@ include_graphics("heatmap.png")
 
 ### Dependency Matrix:
 
+In this example we are using the heuristics miner. Other miners available for bupaR are the alpha miner and the inductive miner.
 (threshold is set to 0.5, covering half of the activities in the log)
 
 ```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
